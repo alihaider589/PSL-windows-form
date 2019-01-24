@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD720B6D-6E50-4D84-9A18-64D94289828B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PSL_APPLICATION</RootNamespace>
+    <AssemblyName>PSL APPLICATION</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Match IU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add Match IU.Designer.cs">
+      <DependentUpon>Add Match IU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add match LQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add match LQ.Designer.cs">
+      <DependentUpon>Add match LQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMatch PZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMatch PZ.Designer.cs">
+      <DependentUpon>AddMatch PZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMatch quetta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMatch quetta.Designer.cs">
+      <DependentUpon>AddMatch quetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMatchKarachiKingz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMatchKarachiKingz.Designer.cs">
+      <DependentUpon>AddMatchKarachiKingz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMatchMultan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMatchMultan.Designer.cs">
+      <DependentUpon>AddMatchMultan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Edit Player LQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit Player LQ.Designer.cs">
+      <DependentUpon>Edit Player LQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Player Quetta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit Player Quetta.Designer.cs">
+      <DependentUpon>Edit Player Quetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Player.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit Player.Designer.cs">
+      <DependentUpon>Edit Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPlayer IU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditPlayer IU.Designer.cs">
+      <DependentUpon>EditPlayer IU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPlayer PZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditPlayer PZ.Designer.cs">
+      <DependentUpon>EditPlayer PZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPlayerMultan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditPlayerMultan.Designer.cs">
+      <DependentUpon>EditPlayerMultan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Islamabad_United.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Islamabad_United.Designer.cs">
+      <DependentUpon>Islamabad_United.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karachi Kingz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karachi Kingz.Designer.cs">
+      <DependentUpon>Karachi Kingz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lahore Qalanders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lahore Qalanders.Designer.cs">
+      <DependentUpon>Lahore Qalanders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Match Result PZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Match Result PZ.Designer.cs">
+      <DependentUpon>Match Result PZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Match Result Quetta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Match Result Quetta.Designer.cs">
+      <DependentUpon>Match Result Quetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Match _ result LQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Match _ result LQ.Designer.cs">
+      <DependentUpon>Match _ result LQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matches Result Karachi Kingz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Matches Result Karachi Kingz.Designer.cs">
+      <DependentUpon>Matches Result Karachi Kingz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchResultMultan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatchResultMultan.Designer.cs">
+      <DependentUpon>MatchResultMultan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Match_Result_IU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Match_Result_IU.Designer.cs">
+      <DependentUpon>Match_Result_IU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultanSultan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultanSultan.Designer.cs">
+      <DependentUpon>MultanSultan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peshawar_Zalmi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peshawar_Zalmi.Designer.cs">
+      <DependentUpon>Peshawar_Zalmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player List IU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player List IU.Designer.cs">
+      <DependentUpon>Player List IU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player List Karachi Kingz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player List Karachi Kingz.Designer.cs">
+      <DependentUpon>Player List Karachi Kingz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player List LQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player List LQ.Designer.cs">
+      <DependentUpon>Player List LQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player List Peshawar Zalmi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player List Peshawar Zalmi.Designer.cs">
+      <DependentUpon>Player List Peshawar Zalmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player ScoreBoard LQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player ScoreBoard LQ.Designer.cs">
+      <DependentUpon>Player ScoreBoard LQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player ScoreBoard Quetta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player ScoreBoard Quetta.Designer.cs">
+      <DependentUpon>Player ScoreBoard Quetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player ScoreBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player ScoreBoard.Designer.cs">
+      <DependentUpon>Player ScoreBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerList Quetta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerList Quetta.Designer.cs">
+      <DependentUpon>PlayerList Quetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerListMultan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerListMultan.Designer.cs">
+      <DependentUpon>PlayerListMultan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players ScoreBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Players ScoreBoard.Designer.cs">
+      <DependentUpon>Players ScoreBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerScoreboard PZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerScoreboard PZ.Designer.cs">
+      <DependentUpon>PlayerScoreboard PZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerScoreBoardMultan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerScoreBoardMultan.Designer.cs">
+      <DependentUpon>PlayerScoreBoardMultan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSLMAINPAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSLMAINPAGE.Designer.cs">
+      <DependentUpon>PSLMAINPAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quetta Gladiator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quetta Gladiator.Designer.cs">
+      <DependentUpon>Quetta Gladiator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upcoming Match IU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Upcoming Match IU.Designer.cs">
+      <DependentUpon>Upcoming Match IU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upcoming Match LQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Upcoming Match LQ.Designer.cs">
+      <DependentUpon>Upcoming Match LQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upcoming match PZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Upcoming match PZ.Designer.cs">
+      <DependentUpon>Upcoming match PZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upcoming Match Quetta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Upcoming Match Quetta.Designer.cs">
+      <DependentUpon>Upcoming Match Quetta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upcoming Match_Karachi Kingz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Upcoming Match_Karachi Kingz.Designer.cs">
+      <DependentUpon>Upcoming Match_Karachi Kingz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingMatchMultan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpcomingMatchMultan.Designer.cs">
+      <DependentUpon>UpcomingMatchMultan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Match IU.resx">
+      <DependentUpon>Add Match IU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add match LQ.resx">
+      <DependentUpon>Add match LQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMatch PZ.resx">
+      <DependentUpon>AddMatch PZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMatch quetta.resx">
+      <DependentUpon>AddMatch quetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMatchKarachiKingz.resx">
+      <DependentUpon>AddMatchKarachiKingz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMatchMultan.resx">
+      <DependentUpon>AddMatchMultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Player LQ.resx">
+      <DependentUpon>Edit Player LQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Player Quetta.resx">
+      <DependentUpon>Edit Player Quetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Player.resx">
+      <DependentUpon>Edit Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPlayer IU.resx">
+      <DependentUpon>EditPlayer IU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPlayer PZ.resx">
+      <DependentUpon>EditPlayer PZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPlayerMultan.resx">
+      <DependentUpon>EditPlayerMultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Islamabad_United.resx">
+      <DependentUpon>Islamabad_United.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karachi Kingz.resx">
+      <DependentUpon>Karachi Kingz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lahore Qalanders.resx">
+      <DependentUpon>Lahore Qalanders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Match Result PZ.resx">
+      <DependentUpon>Match Result PZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Match Result Quetta.resx">
+      <DependentUpon>Match Result Quetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Match _ result LQ.resx">
+      <DependentUpon>Match _ result LQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matches Result Karachi Kingz.resx">
+      <DependentUpon>Matches Result Karachi Kingz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchResultMultan.resx">
+      <DependentUpon>MatchResultMultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Match_Result_IU.resx">
+      <DependentUpon>Match_Result_IU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultanSultan.resx">
+      <DependentUpon>MultanSultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peshawar_Zalmi.resx">
+      <DependentUpon>Peshawar_Zalmi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player List IU.resx">
+      <DependentUpon>Player List IU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player List Karachi Kingz.resx">
+      <DependentUpon>Player List Karachi Kingz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player List LQ.resx">
+      <DependentUpon>Player List LQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player List Peshawar Zalmi.resx">
+      <DependentUpon>Player List Peshawar Zalmi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player ScoreBoard LQ.resx">
+      <DependentUpon>Player ScoreBoard LQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player ScoreBoard Quetta.resx">
+      <DependentUpon>Player ScoreBoard Quetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player ScoreBoard.resx">
+      <DependentUpon>Player ScoreBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerList Quetta.resx">
+      <DependentUpon>PlayerList Quetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerListMultan.resx">
+      <DependentUpon>PlayerListMultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players ScoreBoard.resx">
+      <DependentUpon>Players ScoreBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerScoreboard PZ.resx">
+      <DependentUpon>PlayerScoreboard PZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerScoreBoardMultan.resx">
+      <DependentUpon>PlayerScoreBoardMultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PSLMAINPAGE.resx">
+      <DependentUpon>PSLMAINPAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quetta Gladiator.resx">
+      <DependentUpon>Quetta Gladiator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upcoming Match IU.resx">
+      <DependentUpon>Upcoming Match IU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upcoming Match LQ.resx">
+      <DependentUpon>Upcoming Match LQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upcoming match PZ.resx">
+      <DependentUpon>Upcoming match PZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upcoming Match Quetta.resx">
+      <DependentUpon>Upcoming Match Quetta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upcoming Match_Karachi Kingz.resx">
+      <DependentUpon>Upcoming Match_Karachi Kingz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpcomingMatchMultan.resx">
+      <DependentUpon>UpcomingMatchMultan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1ef49128-86eb-11e7-817c-4caf18ee223c-660x330.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Islamabad United logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karachi Kingz logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lahore Qalanders logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Multan sultan Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pakistan-Super-League-2018-Fixtures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peshawar_Zalmi_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSL logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quetta galadiators logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
